@@ -1,0 +1,15 @@
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+.wrapper {
+    max-width: 60%;
+    margin: 0 auto;
+}
+.flex-row {
+    display: flex;
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
