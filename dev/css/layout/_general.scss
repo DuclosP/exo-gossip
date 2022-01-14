@@ -3,7 +3,7 @@ body {
 }
 
 .wrapper {
-    max-width: 1290px;
+    max-width: 1190px;
     margin: 0 auto;
 }
 .flex-row {
@@ -12,4 +12,30 @@ body {
 .flex-col {
     display: flex;
     flex-direction: column;
+}
+//reglè générale pour toute les sections
+section {
+    article {
+        a{
+            text-decoration: none;
+            .article-txt{
+                padding: 30px;
+                .label{
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    color: #EA1717;
+                }
+                h2 {
+                    color: #000;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                }
+            }
+            &:hover{
+                h2{
+                    color: #EA1717;
+                }
+            }
+        }
+    }
 }
