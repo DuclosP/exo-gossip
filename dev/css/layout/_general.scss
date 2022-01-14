@@ -39,3 +39,41 @@ section {
         }
     }
 }
+//reègle pour le swiper perso
+.swiper-no-fade{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    .swiperb-button-prev{
+        &:after{
+            content: "prev";
+        }
+    }
+    .swiperb-button-next{
+        &:after{
+            content: "next";
+        }
+    }
+    .swiperb-button-next, .swiperb-button-prev{
+        width: 40px;
+        height: 40px;
+        transform: translateX(-50%);
+        top: 50%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 20;
+        &:after{
+            font-family: swiper-icons;
+            font-size: 30px;
+            letter-spacing: 0;
+            color: #000;
+            opacity: 1;
+        }
+        &:hover:after {
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
+}

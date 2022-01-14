@@ -22,6 +22,15 @@
     },
 });
 
+const swiperBeauty = new Swiper('.swiper-no-fade', {
+  direction: 'horizontal',
+  loop: true,
+  // Navigation arrows
+  navigation: {
+      nextEl: '.swiperb-button-next',
+      prevEl: '.swiperb-button-prev',
+  },
+})
 //-------------//
 //Swiper config//
 //-------------//
