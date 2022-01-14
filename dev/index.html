@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/styles.min.css">
   <title>Vive les gossips</title>
 </head>
@@ -97,7 +98,29 @@
         </a>
       </article>
     </section>
+    <section class="section-2">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-title">
+          <span>trending</span>
+        </div>
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><a href="#">Exotic Trips are Getting More and More Popular in South America</a></div>
+          <div class="swiper-slide"><a href="#">Out of This World Experience with Exotic Travel Destinations</a></div>
+          <div class="swiper-slide"><a href="#">Work Out as Much as Possible During Your All Inclusive Vacations</a></div>
+          <div class="swiper-slide"><a href="#">Bali Travel Experience: Combine Luxury with a Real Life Adventure</a></div>
+          <div class="swiper-slide"><a href="#">A Breakthough for This Year: Space Travel Might Become a Thing</a></div>
+
+        </div>       
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
   </main>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 </html>
