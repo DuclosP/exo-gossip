@@ -235,31 +235,6 @@
                     }
                 }
             }
-            .stay-in-touch{
-                height: 235px;
-                background: #A7E0E5 ;
-                padding: 20px;
-                display: flex;
-                flex-direction: column;
-                h2{
-                    margin: 0;
-                }
-                p{
-                    font-size: 15px;
-                }
-                .e-mail{
-                    display: flex;
-                    flex-direction: column;
-                    input {
-                        margin-bottom: 10px;
-                        height: 48px;
-                        font-size: 14px;
-                        &:focus{
-                            outline: none;
-                        }
-                    }
-                }
-            }
         }
     }
     .buy-banner {

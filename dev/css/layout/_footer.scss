@@ -1,0 +1,85 @@
+.footer {
+    margin-top: 200px;
+    color: white;
+    background-color: #000;
+    h2{
+        background-color: #000;
+        margin: 0;
+        text-transform: uppercase;
+        &:after{
+            background-color: #666666;
+            width: 85%;
+        }
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .footer-news{
+            display: flex;
+            div {
+                padding: 20px;
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    li{
+                        margin: 10px 0;
+                        a{
+                            text-decoration: none;
+                            color: #fff;
+                            font-size: 12px;
+                            &:hover{
+                                color:#EA1717;
+                            }
+                        }
+                    }
+                }
+            }
+            .stay-in-touch{
+                background: #000;
+                .e-mail{
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .footer-nav{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a{
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        .logo{
+            margin: 10px;
+            padding: 10px;
+            h1{
+                font-size: 34px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+        .social {
+            width: 20%;
+            display: flex;
+            justify-content: space-around;
+            a{  
+                font-size: 14px;
+                padding: 15px;
+                background-color: #20c3cc;;
+                &:hover{
+                    background-color: #EA1717;
+                }
+            }
+        }
+        .contact{
+            font-size: 14px;
+        }
+    }
+}

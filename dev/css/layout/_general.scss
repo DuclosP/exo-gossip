@@ -13,6 +13,24 @@ body {
     display: flex;
     flex-direction: column;
 }
+//design du logo
+.logo{
+    justify-content: center;
+    align-items: center;
+    background-color: #EA1717;
+    h1 {
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 3.5em;
+    }
+    p{
+        text-align: center;
+    }
+    a{
+        color: #fff;
+        text-decoration: none;
+    }
+}
 //règle pour les h2 avec une barre après
 .title-bar{
     background-color: #fff;
@@ -95,6 +113,32 @@ section {
             letter-spacing: 0;
             color: #fff;
             opacity: 0;
+        }
+    }
+}
+//la boite stay in touch
+.stay-in-touch{
+    height: 235px;
+    background: #A7E0E5 ;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    h2{
+        margin: 0;
+    }
+    p{
+        font-size: 15px;
+    }
+    .e-mail{
+        display: flex;
+        flex-direction: column;
+        input {
+            margin-bottom: 10px;
+            height: 48px;
+            font-size: 14px;
+            &:focus{
+                outline: none;
+            }
         }
     }
 }
