@@ -324,7 +324,7 @@
                         background: url(../img/42-696x464.jpg) center/cover;
                     }
                     .slide-3{
-                        background: url(../../img/17-1068x797.jpg) center/cover;
+                        background: url(../img/17-1068x797.jpg) center/cover;
                     }  
                 }
             }
@@ -339,7 +339,7 @@
                         background: url(../img/21-1068x712.jpg) center/cover;
                     }
                     .slide-3{
-                        background: url(../../img/43-696x1044.jpg) center/cover;
+                        background: url(../img/43-696x1044.jpg) center/cover;
                     }  
                 }
             }
@@ -354,7 +354,7 @@
                         background: url(../img/21-1068x712.jpg) center/cover;
                     }
                     .slide-3{
-                        background: url(../../img/43-696x1044.jpg) center/cover;
+                        background: url(../img/43-696x1044.jpg) center/cover;
                     }  
                 }
             }
@@ -369,11 +369,110 @@
                         background: url(../img/45-696x1044.jpg) center/cover;
                     }
                     .slide-3{
-                        background: url(../../img/34-696x465.jpg) center/cover;
+                        background: url(../img/34-696x465.jpg) center/cover;
                     }  
                 }
             }
         }
     }
-
+    h2 {
+        grid-area: title;
+        &:after{
+            width: 80%;
+        }
+    }
+    .section-5{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 360px;
+        gap: 2em;
+        .article{
+            border: 1px solid #dedede;
+            .article-img{
+                display: block;
+                width: 100%;
+                height: 50%;
+            }
+            .article-txt{
+                padding: 15px;
+                background-color: #fff;
+                .label{
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    color: #EA1717;
+                }
+                h2 {
+                    color: #000;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                }
+            }
+            &:hover{
+                h2{
+                    color: #EA1717;
+                }
+            }
+            &:nth-of-type(1){
+                .article-img{
+                    background: url(../img/45-696x1044.jpg) center/cover;
+                }
+                
+            }
+            &:nth-of-type(2){
+                .article-img{
+                    background: url(../img/44-696x464.jpg) center/cover;
+                }
+            }
+            &:nth-of-type(3){
+                .article-img{
+                    background: url(../img/43-696x1044.jpg) center/cover;
+                }
+            }
+            &:nth-of-type(4){
+                .article-img{
+                    background: url(../img/42-696x464.jpg) center/cover;
+                }
+            }
+            &:nth-of-type(5){
+                .article-img{
+                    background: url(../img/41-696x465.jpg) center/cover;
+                }
+            }
+            &:nth-of-type(6){
+                .article-img{
+                    background: url(../img/40-1068x1602.jpg) center/cover;
+                }
+            }
+            &:nth-of-type(7){
+                .article-img{
+                    background: url(../img/39-1068x712.jpg) center/cover;
+                }
+            }
+            &:nth-of-type(8){
+                .article-img{
+                    background: url(../img/38-1068x711.jpg) center/cover;
+                }
+            }
+            &:nth-of-type(9){
+                .article-img{
+                    background: url(../img/41-696x465.jpg) center/cover;
+                }
+            }
+            &:nth-of-type(10){
+                .article-img{
+                    background: url(../img/40-1068x1602.jpg) center/cover;
+                }
+            }
+            &:nth-of-type(11){
+                .article-img{
+                    background: url(../img/39-1068x712.jpg) center/cover;
+                }
+            }
+            &:nth-of-type(12){
+                .article-img{
+                    background: url(../img/38-1068x711.jpg) center/cover;
+                }
+            }
+        }
+    }
 }
