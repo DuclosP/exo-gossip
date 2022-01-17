@@ -13,6 +13,23 @@ body {
     display: flex;
     flex-direction: column;
 }
+//règle pour les h2 avec une barre après
+.title-bar{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    &::after{
+        content: "";
+        width: 59%;
+        height: 5px;
+        right: 0;
+        top: 50%;
+        background: #dedede;
+        z-index: 0;
+    }
+}
 //reglè générale pour toute les sections
 section {
     article {
@@ -41,6 +58,14 @@ section {
 }
 //reègle pour le swiper perso
 .swiper-no-fade{
+    &:hover {
+        .swiperb-button-next, .swiperb-button-prev{
+            &::after{
+                opacity: 1;
+                cursor: pointer;
+            }
+        }
+    }
     overflow: hidden;
     display: grid;
     grid-template-columns: 10% 1fr 10%;
@@ -68,12 +93,8 @@ section {
             font-family: swiper-icons;
             font-size: 30px;
             letter-spacing: 0;
-            color: #000;
-            opacity: 1;
-        }
-        &:hover:after {
-            opacity: 1;
-            cursor: pointer;
+            color: #fff;
+            opacity: 0;
         }
     }
 }

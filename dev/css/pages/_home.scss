@@ -191,18 +191,6 @@
             h2 {
                 text-transform: uppercase;
             }
-            .must{
-                position: relative;
-                &::after{
-                    content: "";
-                    position: absolute;
-                    width: 55%;
-                    height: 5px;
-                    right: 0;
-                    top: 50%;
-                    background: #dedede;
-                }
-            }
             .side-img{
                 display: block;
                 height: 235px;
@@ -278,13 +266,21 @@
         margin: 50px;
         text-align: center;
     }
+    //section avec les 3 swiper placé dans une belle grid
     .section-4{
         margin: 50px 0;
         display: grid;
         grid-template-columns: repeat(3,1fr);
         gap: 30px;
+        h2{
+            text-transform: uppercase;
+        }
+        .title-bar:after{
+            width: 100%;
+        }
+        //la partie sur les 3 swipers
         .swiper-no-fade{
-            width: 400px; 
+            width: calc(1130px/3); 
             .swiper-wrapper{
                 .swiper-slide{
                     height: 500px;
@@ -292,7 +288,6 @@
                         display: block;
                         height: 100%;
                         text-decoration: none;
-                        background: red;
                         color: #fff;
                         text-align: center;
                         cursor:move;
@@ -314,15 +309,71 @@
                             }
                         }
                         
-                    }
-                    .g-slide-1{
-                         background: url(../img/41-696x465.jpg) center/cover;
-                    }
-                    .g-slide-2{
-                        background: url(../img/42-696x464.jpg) center/cover;
-                   }                       
+                    }                    
                 } 
             }
         }  
+        //pour les images dans les sliders
+        .beauty-swipe{
+            .swiper-no-fade{
+                .swiper-wrapper{
+                    .slide-1{
+                        background: url(../img/41-696x465.jpg) center/cover;
+                    }
+                    .slide-2{
+                        background: url(../img/42-696x464.jpg) center/cover;
+                    }
+                    .slide-3{
+                        background: url(../../img/17-1068x797.jpg) center/cover;
+                    }  
+                }
+            }
+        }
+        .entertainement-swipe{
+            .swiper-no-fade{
+                .swiper-wrapper{
+                    .slide-1{
+                        background: url(../img/16-1068x709.jpg) center/cover;
+                    }
+                    .slide-2{
+                        background: url(../img/21-1068x712.jpg) center/cover;
+                    }
+                    .slide-3{
+                        background: url(../../img/43-696x1044.jpg) center/cover;
+                    }  
+                }
+            }
+        }
+        .entertainement-swipe{
+            .swiper-no-fade{
+                .swiper-wrapper{
+                    .slide-1{
+                        background: url(../img/16-1068x709.jpg) center/cover;
+                    }
+                    .slide-2{
+                        background: url(../img/21-1068x712.jpg) center/cover;
+                    }
+                    .slide-3{
+                        background: url(../../img/43-696x1044.jpg) center/cover;
+                    }  
+                }
+            }
+        }
+        .modelling-swipe{
+            .swiper-no-fade{
+                .swiper-wrapper{
+                    .slide-1{
+                        background: url(../img/48-1068x1600.jpg) center/cover;
+                    }
+                    .slide-2{
+                        background: url(../img/45-696x1044.jpg) center/cover;
+                    }
+                    .slide-3{
+                        background: url(../../img/34-696x465.jpg) center/cover;
+                    }  
+                }
+            }
+        }
     }
+
 }
