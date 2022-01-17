@@ -1,9 +1,11 @@
 .main{
     margin-top: 80px;
+    @media screen and (max-width:750px){
+        margin: 20px;
+    }
     //section avec 4 article positionné grâce a grid
     .section-1{
         display: grid;
-        grid-template-columns: 40% 1fr 1fr;
         grid-template-rows: 370px 230px;
         gap: 2em;
         grid-template-areas: 
@@ -40,11 +42,30 @@
             &:nth-of-type(4){
                 grid-area: large;
                 a{
-                    height: 100%;
                     display: flex;
+                    height: 100%;
                     .article-img{
                         width: 80%;
                         background: url(../img/26-1068x712.jpg) center top/cover;
+                    }
+                    .article-txt{
+                        padding: 80px 30px;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width:750px) {
+            display: flex;
+            flex-direction: column;
+            article{
+                height: 800px;
+                a{
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    .article-img {
+                        width: 100%;
+                        height: 100%;
                     }
                     .article-txt{
                         padding: 80px 30px;
@@ -113,6 +134,9 @@
             grid-template-columns: repeat(3, 1fr);
             grid-auto-rows: 400px 400px 400px ;
             gap: 1.5em;
+            @media screen and (max-width:900px) {              
+                width: 64%;
+            }
             .article {
                 a{
                     display: block;
@@ -127,8 +151,15 @@
                         background-color: #fff ;
                         position: absolute;
                         bottom: 40px;
+                        @media screen and (max-width:900px) {
+                            padding: 5px;
+                            h2{
+                                font-size: 14px;
+                            }
+                        }
                         h2{
                             margin: 0;
+                            
                         }
                         .label {
                             padding: 14px 0;
@@ -240,6 +271,16 @@
     .buy-banner {
         margin: 50px;
         text-align: center;
+        @media screen and (max-width: 750px) {
+            margin: 50px 0;
+            a{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+            
+        }
     }
     //section avec les 3 swiper placé dans une belle grid
     .section-4{
@@ -256,6 +297,13 @@
         //la partie sur les 3 swipers
         .swiper-no-fade{
             width: calc(1130px/3); 
+            @media screen and (max-width: 900px) {
+                width: calc(780px/3);
+            }
+            @media screen and (max-width:750px) {
+                width: calc(610px/3);
+            }
+            
             .swiper-wrapper{
                 .swiper-slide{
                     height: 500px;
@@ -371,6 +419,7 @@
             .article-txt{
                 padding: 15px;
                 background-color: #fff;
+                
                 .label{
                     text-transform: uppercase;
                     font-size: 14px;
@@ -380,6 +429,11 @@
                     color: #000;
                     font-size: 20px;
                     text-transform: uppercase;
+                }
+                @media screen and (max-width:900px) {              
+                    h2{
+                        font-size: 16px;
+                    }
                 }
             }
             &:hover{
