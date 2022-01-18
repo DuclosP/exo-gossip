@@ -2,13 +2,9 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
-
 .wrapper {
-    max-width: 1190px;
+    max-width: 1200px;
     margin: 0 auto;
-    @media screen and (max-width:900px) {
-        max-width: 750px;
-    }
 }
 .flex-row {
     display: flex;
@@ -57,26 +53,26 @@ section {
     article {
         a{
             text-decoration: none;
-            .article-txt{
-                padding: 30px;
-                .label{
-                    text-transform: uppercase;
-                    font-size: 14px;
-                    color: #EA1717;
-                }
-                h2 {
-                    color: #000;
-                    font-size: 20px;
-                    text-transform: uppercase;
-                        @media screen and (max-width: 900px) {
-                            font-size: 16px;
-                    }
+        }
+        .article-txt{
+            padding: 30px;
+            .label{
+                text-transform: uppercase;
+                font-size: 14px;
+                color: #EA1717;
+            }
+            h2 {
+                color: #000;
+                font-size: 20px;
+                text-transform: uppercase;
+                @media screen and (max-width: 900px) {
+                    font-size: 16px;
                 }
             }
-            &:hover{
-                h2{
-                    color: #EA1717;
-                }
+        }
+        &:hover{
+            h2{
+                color: #EA1717;
             }
         }
     }

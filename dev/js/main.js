@@ -34,3 +34,29 @@ const swiperBeauty = new Swiper('.swiper-no-fade', {
 //-------------//
 //Swiper config//
 //-------------//
+
+//sticky nav on scroll
+let nav = document.querySelector(".main-nav");
+let annulation = window.innerHeight /2;
+//initialisation de la valeur top à 0
+let pageTop = 0;
+
+//ajout de l'évent sur le scrolling de windows
+window.addEventListener('scroll', () => {
+    //compare pour la demi haut
+    if(window.scrollY > annulation){
+        nav.classList.add("sticky-nav");
+    }else{
+        nav.classList.remove("sticky-nav")
+    }
+    //compare pour la direction du scroll
+    if(pageTop > window.scrollY){
+      nav.classList.add("reveal")
+    }else{
+      nav.classList.add("sticky-nav")
+      nav.classList.remove("reveal")
+        console.log("scroll down");
+    }
+    pageTop = window.scrollY; 
+})
+
